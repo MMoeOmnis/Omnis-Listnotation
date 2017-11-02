@@ -1,0 +1,6 @@
+;  remove all selected rows of data from the list iPlayersList.
+Set reference lSearchRef to iPlayersList.$first(kTrue,kFalse)
+While lSearchRef
+	Do iPlayersList.$remove(iPlayersList.$line)
+	Set reference lSearchRef to iPlayersList.$next(iPlayersList.$line,kTrue,kFalse)
+End While

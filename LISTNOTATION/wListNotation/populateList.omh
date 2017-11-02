@@ -1,0 +1,5 @@
+;  add 4 rows of data to the list iPlayersList.
+Do iPlayersList.$add('Simon Saviour',31,'Goalkeeper')
+Do iPlayersList.$add('Barry Brusier',25,'Defender')
+Do iPlayersList.$add('Charlie Creator',28,'Midfielder')
+Do iPlayersList.$add('Dick Deadly',22,'Striker')

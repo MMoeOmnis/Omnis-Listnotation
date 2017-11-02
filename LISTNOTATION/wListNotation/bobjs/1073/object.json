@@ -1,0 +1,30 @@
+{
+	"ident": 1073,
+	"order": 16386,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColor3DFace",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 69,
+		"left": 10,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "Press the 'Next' button to perform each step in order.  During this process list variable notation will be executed to first define and populate the list '\u001B\u000200000001#\u001B\u000200000000#iPlayersList\u001B\u000200000001#\u001B\u000200000000#' and then perform basic functions on the list.  To view the code executed context-click on the 'Next' button."
+		},
+		"textcolor": "kColorWindowText",
+		"top": 10,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 436
+	}
+}

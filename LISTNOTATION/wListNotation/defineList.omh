@@ -1,0 +1,9 @@
+;  define the variables to be used as column definitions in the list variable iPlayersList.
+Do iPlayersList.$define(iName,iAge,iPosition)
+
+;  extract the column names from the list iPlayersList to display as cloumn headings in the complex grid
+Calculate iCols as iPlayersList.$cols.$makelist($ref.$name)
+Do iCols.$redefine(iColName)
+Calculate iCol1 as lst(iCols,1,iColName)
+Calculate iCol2 as lst(iCols,2,iColName)
+Calculate iCol3 as lst(iCols,3,iColName)

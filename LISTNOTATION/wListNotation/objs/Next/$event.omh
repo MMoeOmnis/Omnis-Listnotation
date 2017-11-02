@@ -1,0 +1,34 @@
+On evClick
+	Switch iSteps.$line
+		Case 1
+			Do method defineList     ;; click on this line and press F8 to view the method 'defineList'
+			Do $cwind.$objs.Previous.$enabled.$assign(kTrue)     ;; enable previous button
+		Case 2
+			Do method populateList     ;; click on this line and press F8 to view the method 'populateList'
+		Case 3
+			Do method insertRow     ;; click on this line and press F8 to view the method 'insetRow'
+		Case 4
+			Do method replaceRow     ;; click on this line and press F8 to view the method 'replaceRow'
+		Case 5
+			Calculate iTempList as iPlayersList     ;; make a copy of the list before step 5 is executed
+			Do method sortList     ;; click on this line and press F8 to view the method 'sortList'
+		Case 6
+			Calculate iTempList2 as iPlayersList
+			Do method searchList     ;; click on this line and press F8 to view the method 'searchList'
+		Case 7
+			Calculate iTempList3 as iPlayersList
+			Do method deleteRows     ;; click on this line and press F8 to view the method 'deleteRows'
+		Case 8
+			Calculate iTempList4 as iPlayersList
+			Do method clearList     ;; click on this line and press F8 to view the method 'clearList'
+			Do $cwind.$objs.Next.$enabled.$assign(kFalse)     ;; disable next button
+	End Switch
+	Do $cwind.$objs.ListView.$redraw()
+	
+	Do iSteps.$line.$assign(iSteps.$line+1)
+	Do iSteps.$loadcols()
+	Do $cwind.$objs.Step.$redraw()
+	
+	
+On evRMouseDown
+	Set reference iObjRef to $cobj

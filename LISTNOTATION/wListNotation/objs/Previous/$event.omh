@@ -1,0 +1,35 @@
+On evClick
+	Switch iSteps.$line
+		Case 1
+		Case 2
+			Calculate iCol1 as ''
+			Calculate iCol2 as ''
+			Calculate iCol3 as ''
+			Do $cwind.$objs.Previous.$enabled.$assign(kFalse)
+		Case 3
+			Do iPlayersList.$clear()
+		Case 4
+			Do iPlayersList.$remove(3)
+			Do iPlayersList.$line.$assign(0)
+		Case 5
+			Do iPlayersList.$line.$assign(3)
+			Do iPlayersList.$assigncols('Chris Crusher',29,'Defender')
+		Case 6
+			Calculate iPlayersList as iTempList
+		Case 7
+			Calculate iPlayersList as iTempList2
+		Case 8
+			Calculate iPlayersList as iTempList3
+		Case 9
+			Calculate iPlayersList as iTempList4
+			Do $cwind.$objs.Next.$enabled.$assign(kTrue)
+	End Switch
+	Do $cwind.$objs.ListView.$redraw()
+	
+	Do iSteps.$line.$assign(iSteps.$line-1)
+	Do iSteps.$loadcols()
+	Do $cwind.$objs.Step.$redraw()
+	
+	
+On evRMouseDown
+	Set reference iObjRef to $cobj

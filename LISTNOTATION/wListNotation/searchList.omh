@@ -1,0 +1,2 @@
+;  search the list for all rows of data where the third column (iPosition) = 'Midfielder'.
+Do iPlayersList.$search(iPosition='Midfielder',kTrue,kFalse,kTrue,kTrue)

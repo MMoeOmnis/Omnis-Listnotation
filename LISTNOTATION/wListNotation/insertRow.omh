@@ -1,0 +1,4 @@
+;  insert a row of data into the list before line 3, alternativly $addafter() can be used
+;  to insert a row of data after row 3.
+Do iPlayersList.$addbefore(3,'Chris Crusher',29,'Defender')
+Do iPlayersList.3.$selected.$assign(kTrue)

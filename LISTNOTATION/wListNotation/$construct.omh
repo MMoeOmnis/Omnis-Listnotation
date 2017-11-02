@@ -1,0 +1,15 @@
+;  basic list notation sample window
+
+Do iSteps.$define(iStep)
+Do iSteps.$add('Step 1 - Define the list.')
+Do iSteps.$add('Step 2 - Populate the list.')
+Do iSteps.$add('Step 3 - Insert a row.')
+Do iSteps.$add('Step 4 - Replace the current row.')
+Do iSteps.$add("Step 5 - Sort the list by 'iAge'.")
+Do iSteps.$add("Step 6 - Search the list for midfielders.")
+Do iSteps.$add('Step 7 - Delete selected rows.')
+Do iSteps.$add('Step 8 - Clear the list.')
+Do iSteps.$add('The End...')
+
+Do iSteps.$line.$assign(1)
+Do iSteps.$loadcols()
